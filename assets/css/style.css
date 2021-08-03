@@ -1,8 +1,29 @@
 /*--- GENERAL ---*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+}
 .text-center {
     text-align: center;
 }
 /*--- LOGO ---*/
 .logo {
     margin-top: 39px;
+    border-bottom: 1px solid #000;
+    padding-bottom: 5px;
+    margin-bottom: 8px;
+
+}
+/*--- HEADER ---*/
+.navbar {
+    padding: 8px 0 8px 0;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid #000;
+}
+.navbar a {
+    padding-right: 50px;
+    color: #555555;
 }
