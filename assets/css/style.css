@@ -5,9 +5,15 @@
     box-sizing: border-box;
     text-decoration: none;
     outline: none;
+    list-style: none;
 }
 .text-center {
     text-align: center;
+}
+.container {
+    width: 1440px;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 /*--- LOGO ---*/
 .logo {
@@ -22,8 +28,30 @@
     padding: 8px 0 8px 0;
     border-bottom: 1px solid #000;
     border-top: 1px solid #000;
+    display: flex;
+    justify-content: center;
 }
 .navbar a {
     padding-right: 50px;
     color: #555555;
+}
+.sub-menu {
+    display: none;
+}
+ul.navbar li:hover .sub-menu {
+    display: block;
+    position: absolute;
+    background: #fff;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+/* ul.navbar li:hover .sub-menu ul {
+    display: block;
+    margin: 10px;
+} */
+ul.navbar li:hover .sub-menu ul li{
+    width: 150px;
+    padding: 10px;
+    background: transparent;
+    text-align: center;
 }
